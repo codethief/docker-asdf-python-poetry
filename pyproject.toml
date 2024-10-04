@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "example-project"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"  # Keep this in sync w/ .tool-versions (which should be the main source of truth)
+pytest = "^7.4.4"
+ruff = "^0.1.13"
+mypy = "^1.8.0"
+
+[tool.ruff]
+target-version = "py312"  # Keep this in sync w/ .tool-versions (which should be the main source of truth)
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
